@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <input type="text" class="form-control" (input)="onUpdateServerName($event)">
+            <button class="btn btn-primary py-2" [disabled]="!allowNewServer" (click)="onServerCreate()"> Add new
+                server</button>
+            <p>{{serverCreationValue}}</p>
+            <p>{{serverCreationStatus}}</p>
+            <h2>This is the servers template</h2>
+            <app-server></app-server>
+            <app-server></app-server>
+        </div>
+    </div>
+</div>
